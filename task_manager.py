@@ -20,8 +20,7 @@ def add_task():
 	user_input = input("Enter your choice: ") 
 	match user_input:
 		case "1":
-			String[] tasks = new string[]
-			new_tasks 
+			String[] tasks = {"Buy groceries" , "take a nap"}
 			
 		case "2":
 			print(1)
