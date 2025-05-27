@@ -1,4 +1,62 @@
-def get_encryption(ord):
-	word = "Hello , world!"
-	encrypt_word = "Uryyb , Jbeyq!"
-	return encrypt_word
+#def get_encryption(ord):
+
+a = 'n'	
+b = 'o'
+c = 'p'
+d = 'q'
+e = 'r'
+f = 's'
+g = 't'
+h = 'u'
+i = 'v'
+j = 'w'
+k = 'x'
+l = 'y'
+m = 'z'
+n = 'a'
+o = 'b'
+p = 'c'
+q = 'd'
+r = 'e'
+s = 'f'
+t = 'g'
+u = 'h'
+v = 'i'
+w = 'j'
+x = 'k'
+y = 'l'
+z = 'm'
+
+word_input = "Hello, World!"
+for letter in word_input:
+	a == 'n'	
+	b == 'o'
+	c == 'p'
+	d == 'q'
+	e == 'r'
+	f == 's'
+	g == 't'
+	h == 'u'
+	i == 'v'
+	j == 'w'
+	k == 'x'
+	l == 'y'
+	m == 'z'
+	n == 'a'
+	o == 'b'
+	p == 'c'
+	q == 'd'
+	r == 'e'
+	s == 'f'
+	t == 'g'
+	u == 'h'
+	v == 'i'
+	w == 'j'
+	x == 'k'
+	y == 'l'
+	z == 'm'
+	print(letter , end='')
+
+#print(h,e,l,l,o)
+	
+	
