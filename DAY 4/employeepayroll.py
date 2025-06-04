@@ -51,7 +51,7 @@ while(program):
 
 		case 2:
 			
-			if(employee_name.len == 0):
+			if(len(employee_name) == 0):
 				print("No employees addedd.")
 			 
 
