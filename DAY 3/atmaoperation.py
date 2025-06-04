@@ -16,6 +16,7 @@ print(f"Your current balance is #{balance}.")
 
 print("<><><><><><><><><><><><><><>")
 
+sum_withdrawal = []
 
 program = True
 while(program):
@@ -31,16 +32,18 @@ while(program):
 
 	match (user_selection):
 		case 1: 
-			amount_to_withdraw = float(input("Enter amount to withdraw in multiples of #500 and #1000(Fixed charge of #100): "))
+			amount_to_withdraw = float(input("Enter amount to withdraw(Fixed charge of #100): "))
 
 			while(amount_to_withdraw > balance):
 				amount_to_withdraw = float(input("Insufficient funds. Enter an amount lesser than your balance: "))
-				
+				sum_withdrawal.append(amount_to_withdraw)
 			while(amount_to_withdraw > 20000):
 				amount_to_withdraw = float(input("You cannot withdraw above #20,000. Enter an amount lesser: "))
 
 				while(amount_to_withdraw > balance):
 					amount_to_withdraw = float(input("Insufficient funds. Enter an amount lesser than your balance: "))
+				sum_withdrawal.append(amount_to_withdraw)
+				break
 
 			while (amount_to_withdraw % 500 != 0 and amount_to_withdraw % 1000 != 0):
 				amount_to_withdraw = float(input("Enter amount in multiples of #500 and #1000: "))
@@ -50,11 +53,10 @@ while(program):
 					amount_to_withdraw = float(input("Enter amount greater than 100: "))
 					while(amount_to_withdraw > balance):
 						amount_to_withdraw = float(input("Insufficient funds. Enter an amount lesser than your balance: "))
-			
 						while (amount_to_withdraw % 500 != 0 and amount_to_withdraw % 1000 != 0):
 							amount_to_withdraw = float(input("Enter amount in multiples of #500 and #1000: "))
-
-
+							sum_withdrawal.append(amount_to_withdraw)
+				break
 
 
 			balance = withdrawal_amount(balance , amount_to_withdraw)
@@ -65,6 +67,7 @@ while(program):
 			print(f"Your balance is #{balance}.")
 		 
 		#case 2:
+			print(sum_withdrawal)
 			
 		case 3:
 			program = False
